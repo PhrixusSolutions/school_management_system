@@ -5,6 +5,9 @@
  */
 package gui.clerk;
 
+import gui.student.S1;
+import gui.student.main_page;
+
 /**
  *
  * @author hp pc
@@ -74,6 +77,8 @@ public class StudentMainWindow extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new StudentMainWindow().setVisible(true);
+                
+                
             }
         });
     }
