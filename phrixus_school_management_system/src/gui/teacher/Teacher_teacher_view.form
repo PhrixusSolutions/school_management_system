@@ -19,21 +19,21 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="jTabbedPane1" alignment="0" pref="987" max="32767" attributes="0"/>
+          <Component id="Teacher_Tab_pane" alignment="0" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="jTabbedPane1" alignment="0" pref="489" max="32767" attributes="0"/>
+          <Component id="Teacher_Tab_pane" alignment="0" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Container class="javax.swing.JTabbedPane" name="jTabbedPane1">
+    <Container class="javax.swing.JTabbedPane" name="Teacher_Tab_pane">
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout"/>
       <SubComponents>
-        <Container class="javax.swing.JTabbedPane" name="teacher_view_profile_tab">
+        <Container class="javax.swing.JPanel" name="T_Tab_ViewProfile">
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
               <JTabbedPaneConstraints tabName="View Profile">
@@ -42,29 +42,639 @@
             </Constraint>
           </Constraints>
 
-          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout"/>
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="T_ViewPrfile_ImageBox_panel" alignment="0" pref="975" max="32767" attributes="0"/>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="T_ViewPrfile_ImageBox_panel" alignment="1" max="32767" attributes="0"/>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Container class="javax.swing.JPanel" name="T_ViewPrfile_ImageBox_panel">
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="1" attributes="0">
+                          <Group type="103" groupAlignment="1" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <EmptySpace max="32767" attributes="0"/>
+                                  <Component id="Change_image_Btn" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" attributes="0">
+                                  <EmptySpace min="-2" pref="75" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Group type="103" groupAlignment="1" attributes="0">
+                                              <Component id="Birthday_Label" alignment="0" max="32767" attributes="0"/>
+                                              <Component id="ID_Number_Label" alignment="0" max="32767" attributes="0"/>
+                                              <Component id="Home_Address_Label" alignment="0" max="32767" attributes="0"/>
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <Component id="Position_Label" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                              </Group>
+                                              <Component id="Subject_Label" alignment="1" max="32767" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="1" attributes="0">
+                                              <Group type="102" attributes="0">
+                                                  <Component id="Position_TextField" max="32767" attributes="0"/>
+                                                  <EmptySpace max="-2" attributes="0"/>
+                                                  <Component id="Position_Edit_btn" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Group type="102" attributes="0">
+                                                  <Component id="Subject_TextField" max="32767" attributes="0"/>
+                                                  <EmptySpace max="-2" attributes="0"/>
+                                                  <Component id="Subjects_Edit_btn" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Group type="102" attributes="0">
+                                                  <Group type="103" groupAlignment="0" attributes="0">
+                                                      <Group type="102" attributes="0">
+                                                          <Group type="103" groupAlignment="1" attributes="0">
+                                                              <Component id="ID_number_TextField" alignment="0" max="32767" attributes="0"/>
+                                                              <Group type="102" attributes="0">
+                                                                  <Component id="Day_ComboBox" min="-2" max="-2" attributes="0"/>
+                                                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                                                  <Component id="Month_ComboBox" max="32767" attributes="0"/>
+                                                                  <EmptySpace max="-2" attributes="0"/>
+                                                                  <Component id="Year_comboBox" min="-2" pref="78" max="-2" attributes="0"/>
+                                                              </Group>
+                                                          </Group>
+                                                          <EmptySpace min="-2" pref="136" max="-2" attributes="0"/>
+                                                      </Group>
+                                                      <Group type="102" attributes="0">
+                                                          <Component id="Home_Address_TextField" max="32767" attributes="0"/>
+                                                          <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
+                                                      </Group>
+                                                  </Group>
+                                                  <Group type="103" groupAlignment="0" attributes="0">
+                                                      <Component id="Birthday_Edit_btn" alignment="1" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="ID_Number_Edit_Btn" alignment="1" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="HomeAddress_Edit_Btn" alignment="1" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="TeacherName_Edit_btn" alignment="1" min="-2" max="-2" attributes="0"/>
+                                                  </Group>
+                                                  <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                      </Group>
+                                      <Group type="102" attributes="0">
+                                          <Component id="Extra_label" min="-2" pref="92" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="Extra_TextField" min="-2" pref="428" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="Extra_Edit_btn" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Component id="TeacherName_Label" min="-2" pref="329" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace min="30" pref="30" max="-2" attributes="0"/>
+                                  <Component id="Teacher_image_Label" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace min="-2" pref="54" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
+                                  <Component id="Teacher_image_Label" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="TeacherName_Label" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
+                                      <Component id="TeacherName_Edit_btn" alignment="3" min="-2" pref="20" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" attributes="0">
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="ID_Number_Label" min="-2" max="-2" attributes="0"/>
+                                              <Component id="ID_number_TextField" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Group type="103" groupAlignment="3" attributes="0">
+                                                  <Component id="Birthday_Label" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="Day_ComboBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="Month_ComboBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Component id="Year_comboBox" alignment="0" min="-2" pref="20" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                                          <Component id="Birthday_Edit_btn" min="-2" pref="20" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Component id="ID_Number_Edit_Btn" alignment="0" min="-2" pref="20" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="Home_Address_Label" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="Home_Address_TextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="HomeAddress_Edit_Btn" alignment="0" min="-2" pref="20" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                                          <Component id="Position_Label" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="Position_TextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Component id="Position_Edit_btn" alignment="0" min="-2" pref="20" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="Subject_TextField" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="Subjects_Edit_btn" alignment="0" min="-2" pref="20" max="-2" attributes="0"/>
+                                      <Component id="Subject_Label" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="Extra_label" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="Extra_Edit_btn" alignment="3" min="-2" pref="20" max="-2" attributes="0"/>
+                                      <Component id="Extra_TextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="Change_image_Btn" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace pref="147" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Component class="javax.swing.JLabel" name="Teacher_image_Label">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                    </Property>
+                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                      <Image iconType="3" name="/resourses/teacher Profile.jpg"/>
+                    </Property>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="TeacherName_Label">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Tahoma" size="18" style="1"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="NAME OF THE TEACHER"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="Home_Address_Label">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Tahoma" size="11" style="1"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Home Address :"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="ID_Number_Label">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Tahoma" size="11" style="1"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="ID Number        :"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="Birthday_Label">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Tahoma" size="11" style="1"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Birth-Day          :"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="ID_number_TextField">
+                </Component>
+                <Component class="javax.swing.JTextField" name="Home_Address_TextField">
+                </Component>
+                <Component class="javax.swing.JButton" name="Birthday_Edit_btn">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Edit"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JButton" name="HomeAddress_Edit_Btn">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Edit"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JButton" name="ID_Number_Edit_Btn">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Edit"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JComboBox" name="Day_ComboBox">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="true"/>
+                    <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                      <StringArray count="32">
+                        <StringItem index="0" value="Day..."/>
+                        <StringItem index="1" value="1"/>
+                        <StringItem index="2" value="2"/>
+                        <StringItem index="3" value="3"/>
+                        <StringItem index="4" value="4"/>
+                        <StringItem index="5" value="5"/>
+                        <StringItem index="6" value="6"/>
+                        <StringItem index="7" value="7"/>
+                        <StringItem index="8" value="8"/>
+                        <StringItem index="9" value="9"/>
+                        <StringItem index="10" value="10"/>
+                        <StringItem index="11" value="11"/>
+                        <StringItem index="12" value="12"/>
+                        <StringItem index="13" value="13"/>
+                        <StringItem index="14" value="14"/>
+                        <StringItem index="15" value="15"/>
+                        <StringItem index="16" value="16"/>
+                        <StringItem index="17" value="17"/>
+                        <StringItem index="18" value="18"/>
+                        <StringItem index="19" value="19"/>
+                        <StringItem index="20" value="20"/>
+                        <StringItem index="21" value="21"/>
+                        <StringItem index="22" value="22"/>
+                        <StringItem index="23" value="23"/>
+                        <StringItem index="24" value="24"/>
+                        <StringItem index="25" value="25"/>
+                        <StringItem index="26" value="26"/>
+                        <StringItem index="27" value="27"/>
+                        <StringItem index="28" value="28"/>
+                        <StringItem index="29" value="29"/>
+                        <StringItem index="30" value="30"/>
+                        <StringItem index="31" value="31"/>
+                      </StringArray>
+                    </Property>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Day_ComboBoxActionPerformed"/>
+                  </Events>
+                </Component>
+                <Component class="javax.swing.JComboBox" name="Month_ComboBox">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="true"/>
+                    <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                      <StringArray count="13">
+                        <StringItem index="0" value="Month.."/>
+                        <StringItem index="1" value="January"/>
+                        <StringItem index="2" value="February"/>
+                        <StringItem index="3" value="March"/>
+                        <StringItem index="4" value="April"/>
+                        <StringItem index="5" value="May"/>
+                        <StringItem index="6" value="June"/>
+                        <StringItem index="7" value="July"/>
+                        <StringItem index="8" value="August"/>
+                        <StringItem index="9" value="September"/>
+                        <StringItem index="10" value="October"/>
+                        <StringItem index="11" value="November"/>
+                        <StringItem index="12" value="December"/>
+                      </StringArray>
+                    </Property>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JComboBox" name="Year_comboBox">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="true"/>
+                    <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                      <StringArray count="67">
+                        <StringItem index="0" value="Year..."/>
+                        <StringItem index="1" value="2015"/>
+                        <StringItem index="2" value="2014"/>
+                        <StringItem index="3" value="2013"/>
+                        <StringItem index="4" value="2012"/>
+                        <StringItem index="5" value="2011"/>
+                        <StringItem index="6" value="2010"/>
+                        <StringItem index="7" value="2009"/>
+                        <StringItem index="8" value="2008"/>
+                        <StringItem index="9" value="2007"/>
+                        <StringItem index="10" value="2006"/>
+                        <StringItem index="11" value="2005"/>
+                        <StringItem index="12" value="2004"/>
+                        <StringItem index="13" value="2003"/>
+                        <StringItem index="14" value="2002"/>
+                        <StringItem index="15" value="2001"/>
+                        <StringItem index="16" value="2000"/>
+                        <StringItem index="17" value="1999"/>
+                        <StringItem index="18" value="1998"/>
+                        <StringItem index="19" value="1997"/>
+                        <StringItem index="20" value="1996"/>
+                        <StringItem index="21" value="1995"/>
+                        <StringItem index="22" value="1994"/>
+                        <StringItem index="23" value="1993"/>
+                        <StringItem index="24" value="1992"/>
+                        <StringItem index="25" value="1991"/>
+                        <StringItem index="26" value="1990"/>
+                        <StringItem index="27" value="1989"/>
+                        <StringItem index="28" value="1988"/>
+                        <StringItem index="29" value="1987"/>
+                        <StringItem index="30" value="1986"/>
+                        <StringItem index="31" value="1985"/>
+                        <StringItem index="32" value="1984"/>
+                        <StringItem index="33" value="1983"/>
+                        <StringItem index="34" value="1982"/>
+                        <StringItem index="35" value="1981"/>
+                        <StringItem index="36" value="1980"/>
+                        <StringItem index="37" value="1979"/>
+                        <StringItem index="38" value="1978"/>
+                        <StringItem index="39" value="1977"/>
+                        <StringItem index="40" value="1976"/>
+                        <StringItem index="41" value="1975"/>
+                        <StringItem index="42" value="1974"/>
+                        <StringItem index="43" value="1973"/>
+                        <StringItem index="44" value="1972"/>
+                        <StringItem index="45" value="1971"/>
+                        <StringItem index="46" value="1970"/>
+                        <StringItem index="47" value="1969"/>
+                        <StringItem index="48" value="1968"/>
+                        <StringItem index="49" value="1967"/>
+                        <StringItem index="50" value="1966"/>
+                        <StringItem index="51" value="1965"/>
+                        <StringItem index="52" value="1964"/>
+                        <StringItem index="53" value="1963"/>
+                        <StringItem index="54" value="1962"/>
+                        <StringItem index="55" value="1961"/>
+                        <StringItem index="56" value="1960"/>
+                        <StringItem index="57" value="1959"/>
+                        <StringItem index="58" value="1958"/>
+                        <StringItem index="59" value="1957"/>
+                        <StringItem index="60" value="1956"/>
+                        <StringItem index="61" value="1955"/>
+                        <StringItem index="62" value="1954"/>
+                        <StringItem index="63" value="1953"/>
+                        <StringItem index="64" value="1952"/>
+                        <StringItem index="65" value="1951"/>
+                        <StringItem index="66" value="1950"/>
+                      </StringArray>
+                    </Property>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="Position_Label">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Tahoma" size="11" style="1"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Position             :"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="Subject_Label">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Tahoma" size="11" style="1"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Subjects            :"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="Extra_label">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Tahoma" size="11" style="1"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Extra                  :"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="Position_TextField">
+                </Component>
+                <Component class="javax.swing.JButton" name="Position_Edit_btn">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Edit"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="Subject_TextField">
+                </Component>
+                <Component class="javax.swing.JButton" name="Subjects_Edit_btn">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Edit"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="Extra_TextField">
+                </Component>
+                <Component class="javax.swing.JButton" name="Extra_Edit_btn">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Edit"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Extra_Edit_btnActionPerformed"/>
+                  </Events>
+                </Component>
+                <Component class="javax.swing.JButton" name="TeacherName_Edit_btn">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Edit"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JButton" name="Change_image_Btn">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Change Image"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Change_image_BtnActionPerformed"/>
+                  </Events>
+                </Component>
+              </SubComponents>
+            </Container>
+          </SubComponents>
         </Container>
-        <Container class="javax.swing.JTabbedPane" name="teacher_update_marks_tab">
+        <Container class="javax.swing.JPanel" name="T_Tab_UpdateMarks">
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
-              <JTabbedPaneConstraints tabName="Update marks">
-                <Property name="tabTitle" type="java.lang.String" value="Update marks"/>
+              <JTabbedPaneConstraints tabName="Update Marks">
+                <Property name="tabTitle" type="java.lang.String" value="Update Marks"/>
               </JTabbedPaneConstraints>
             </Constraint>
           </Constraints>
 
-          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout"/>
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jScrollPane1" max="32767" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="Updatemarks_ViewMarks_panal" max="32767" attributes="0"/>
+                                  <Group type="102" attributes="0">
+                                      <Component id="Update_marks_Selecting_panal" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="Update_marks_Selecting_panal" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
+                      <Component id="jScrollPane1" min="-2" pref="260" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="155" max="-2" attributes="0"/>
+                      <Component id="Updatemarks_ViewMarks_panal" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Container class="javax.swing.JPanel" name="Update_marks_Selecting_panal">
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
+                          <Component id="Select_subject_LAbel" min="-2" pref="125" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="Select_subject_ComboBox" min="-2" pref="124" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+                          <Component id="Select_subject_LAbel1" min="-2" pref="125" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="Select_subject_ComboBox1" min="-2" pref="124" max="-2" attributes="0"/>
+                          <EmptySpace pref="290" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="Select_subject_LAbel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="Select_subject_ComboBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Group type="103" alignment="3" groupAlignment="3" attributes="0">
+                                  <Component id="Select_subject_LAbel1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="Select_subject_ComboBox1" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace pref="31" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Component class="javax.swing.JComboBox" name="Select_subject_ComboBox">
+                  <Properties>
+                    <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                      <StringArray count="4">
+                        <StringItem index="0" value="Subject 1"/>
+                        <StringItem index="1" value="Subject 2"/>
+                        <StringItem index="2" value="Subject 3"/>
+                        <StringItem index="3" value="Subject 4"/>
+                      </StringArray>
+                    </Property>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="Select_subject_LAbel">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Tahoma" size="11" style="1"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Select the Subject :"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="Select_subject_LAbel1">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Tahoma" size="11" style="1"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Select the Class :"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JComboBox" name="Select_subject_ComboBox1">
+                  <Properties>
+                    <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                      <StringArray count="4">
+                        <StringItem index="0" value="Subject 1"/>
+                        <StringItem index="1" value="Subject 2"/>
+                        <StringItem index="2" value="Subject 3"/>
+                        <StringItem index="3" value="Subject 4"/>
+                      </StringArray>
+                    </Property>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Container class="javax.swing.JPanel" name="Updatemarks_ViewMarks_panal">
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <EmptySpace min="0" pref="934" max="32767" attributes="0"/>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <EmptySpace min="0" pref="27" max="32767" attributes="0"/>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+            </Container>
+            <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+              <AuxValues>
+                <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+              </AuxValues>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="javax.swing.JTable" name="jTable1">
+                  <Properties>
+                    <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+                      <Table columnCount="2" rowCount="31">
+                        <Column editable="true" title="Student Name" type="java.lang.String"/>
+                        <Column editable="true" title="Marks" type="java.lang.Integer"/>
+                      </Table>
+                    </Property>
+                    <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+                      <TableColumnModel selectionModel="0">
+                        <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="false">
+                          <Title/>
+                          <Editor/>
+                          <Renderer/>
+                        </Column>
+                        <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                          <Title/>
+                          <Editor/>
+                          <Renderer/>
+                        </Column>
+                      </TableColumnModel>
+                    </Property>
+                    <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
+                      <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
+                    </Property>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
+          </SubComponents>
         </Container>
-        <Container class="javax.swing.JTabbedPane" name="jTabbedPane2">
+        <Container class="javax.swing.JPanel" name="jPanel1">
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
-              <JTabbedPaneConstraints tabName="approval">
-                <Property name="tabTitle" type="java.lang.String" value="approval"/>
+              <JTabbedPaneConstraints tabName="Student Approvals">
+                <Property name="tabTitle" type="java.lang.String" value="Student Approvals"/>
               </JTabbedPaneConstraints>
             </Constraint>
           </Constraints>
 
-          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout"/>
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+              </Group>
+            </DimensionLayout>
+          </Layout>
         </Container>
       </SubComponents>
     </Container>
