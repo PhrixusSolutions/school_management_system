@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JInternalFrameFormInfo">
+<Form version="1.5" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JInternalFrameFormInfo">
   <SyntheticProperties>
     <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
   </SyntheticProperties>
@@ -45,7 +45,7 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="T_ViewPrfile_ImageBox_panel" alignment="0" pref="975" max="32767" attributes="0"/>
+                  <Component id="T_ViewPrfile_ImageBox_panel" alignment="0" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
@@ -69,69 +69,86 @@
                               <Group type="102" attributes="0">
                                   <EmptySpace min="-2" pref="75" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Group type="102" alignment="0" attributes="0">
+                                      <Group type="102" attributes="0">
+                                          <Component id="Subject_Label" min="-2" pref="92" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="Subject_TextField" max="32767" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="Subjects_Edit_btn" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" attributes="0">
                                           <Group type="103" groupAlignment="1" attributes="0">
                                               <Component id="Birthday_Label" alignment="0" max="32767" attributes="0"/>
                                               <Component id="ID_Number_Label" alignment="0" max="32767" attributes="0"/>
-                                              <Component id="Home_Address_Label" alignment="0" max="32767" attributes="0"/>
-                                              <Group type="102" alignment="0" attributes="0">
-                                                  <Component id="Position_Label" min="-2" max="-2" attributes="0"/>
-                                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                                              </Group>
-                                              <Component id="Subject_Label" alignment="1" max="32767" attributes="0"/>
+                                              <Component id="Home_Address_Label" alignment="0" pref="89" max="32767" attributes="0"/>
                                           </Group>
                                           <EmptySpace max="-2" attributes="0"/>
-                                          <Group type="103" groupAlignment="1" attributes="0">
+                                          <Group type="103" groupAlignment="0" attributes="0">
                                               <Group type="102" attributes="0">
-                                                  <Component id="Position_TextField" max="32767" attributes="0"/>
-                                                  <EmptySpace max="-2" attributes="0"/>
-                                                  <Component id="Position_Edit_btn" min="-2" max="-2" attributes="0"/>
-                                              </Group>
-                                              <Group type="102" attributes="0">
-                                                  <Component id="Subject_TextField" max="32767" attributes="0"/>
-                                                  <EmptySpace max="-2" attributes="0"/>
-                                                  <Component id="Subjects_Edit_btn" min="-2" max="-2" attributes="0"/>
-                                              </Group>
-                                              <Group type="102" attributes="0">
-                                                  <Group type="103" groupAlignment="0" attributes="0">
-                                                      <Group type="102" attributes="0">
-                                                          <Group type="103" groupAlignment="1" attributes="0">
-                                                              <Component id="ID_number_TextField" alignment="0" max="32767" attributes="0"/>
-                                                              <Group type="102" attributes="0">
+                                                  <Group type="103" groupAlignment="1" attributes="0">
+                                                      <Component id="ID_number_TextField" alignment="0" max="32767" attributes="0"/>
+                                                      <Group type="102" alignment="1" attributes="0">
+                                                          <Group type="103" groupAlignment="0" attributes="0">
+                                                              <Group type="102" alignment="0" attributes="0">
                                                                   <Component id="Day_ComboBox" min="-2" max="-2" attributes="0"/>
                                                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                                                   <Component id="Month_ComboBox" max="32767" attributes="0"/>
-                                                                  <EmptySpace max="-2" attributes="0"/>
-                                                                  <Component id="Year_comboBox" min="-2" pref="78" max="-2" attributes="0"/>
+                                                              </Group>
+                                                              <Group type="102" alignment="0" attributes="0">
+                                                                  <Component id="Home_Address_TextField" min="-2" pref="201" max="-2" attributes="0"/>
+                                                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                                                               </Group>
                                                           </Group>
-                                                          <EmptySpace min="-2" pref="136" max="-2" attributes="0"/>
-                                                      </Group>
-                                                      <Group type="102" attributes="0">
-                                                          <Component id="Home_Address_TextField" max="32767" attributes="0"/>
-                                                          <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
+                                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                                          <Group type="103" groupAlignment="0" attributes="0">
+                                                              <Component id="Year_comboBox" min="-2" pref="78" max="-2" attributes="0"/>
+                                                              <Component id="teacher_adress_label" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                              <Component id="teacher_adress_label1" alignment="0" min="-2" pref="30" max="-2" attributes="0"/>
+                                                              <Component id="teacher_addres_label2" alignment="0" min="-2" pref="30" max="-2" attributes="0"/>
+                                                          </Group>
                                                       </Group>
                                                   </Group>
+                                                  <EmptySpace min="-2" pref="136" max="-2" attributes="0"/>
                                                   <Group type="103" groupAlignment="0" attributes="0">
                                                       <Component id="Birthday_Edit_btn" alignment="1" min="-2" max="-2" attributes="0"/>
                                                       <Component id="ID_Number_Edit_Btn" alignment="1" min="-2" max="-2" attributes="0"/>
                                                       <Component id="HomeAddress_Edit_Btn" alignment="1" min="-2" max="-2" attributes="0"/>
                                                       <Component id="TeacherName_Edit_btn" alignment="1" min="-2" max="-2" attributes="0"/>
                                                   </Group>
-                                                  <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
+                                                  <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Group type="102" attributes="0">
+                                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                                      <Component id="Home_Address_TextField2" alignment="0" pref="187" max="32767" attributes="0"/>
+                                                      <Component id="Home_Address_TextField3" alignment="0" max="32767" attributes="0"/>
+                                                      <Component id="Home_Address_TextField4" alignment="0" max="32767" attributes="0"/>
+                                                  </Group>
+                                                  <EmptySpace max="32767" attributes="0"/>
                                               </Group>
                                           </Group>
                                       </Group>
                                       <Group type="102" attributes="0">
-                                          <Component id="Extra_label" min="-2" pref="92" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="Extra_TextField" min="-2" pref="428" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="Extra_Edit_btn" min="-2" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="TeacherName_Label" min="-2" pref="329" max="-2" attributes="0"/>
+                                              <Group type="102" attributes="0">
+                                                  <Component id="Extra_label" min="-2" pref="92" max="-2" attributes="0"/>
+                                                  <EmptySpace max="-2" attributes="0"/>
+                                                  <Component id="Extra_TextField" min="-2" pref="428" max="-2" attributes="0"/>
+                                                  <EmptySpace max="-2" attributes="0"/>
+                                                  <Component id="Extra_Edit_btn" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <Component id="Position_Label" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                                  <Component id="Position_TextField" min="-2" pref="427" max="-2" attributes="0"/>
+                                                  <EmptySpace max="-2" attributes="0"/>
+                                                  <Component id="Position_Edit_btn" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                          <EmptySpace max="32767" attributes="0"/>
                                       </Group>
-                                      <Component id="TeacherName_Label" min="-2" pref="329" max="-2" attributes="0"/>
                                   </Group>
-                                  <EmptySpace min="30" pref="30" max="-2" attributes="0"/>
                                   <Component id="Teacher_image_Label" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
@@ -177,23 +194,38 @@
                                       <Component id="ID_Number_Edit_Btn" alignment="0" min="-2" pref="20" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="Home_Address_Label" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="Home_Address_TextField" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="HomeAddress_Edit_Btn" alignment="0" min="-2" pref="20" max="-2" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                                          <Component id="Position_Label" alignment="3" min="-2" max="-2" attributes="0"/>
-                                          <Component id="Position_TextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="HomeAddress_Edit_Btn" alignment="0" min="-2" pref="20" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="3" attributes="0">
+                                          <Component id="Home_Address_Label" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="Home_Address_TextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="teacher_adress_label" alignment="3" min="-2" max="-2" attributes="0"/>
                                       </Group>
-                                      <Component id="Position_Edit_btn" alignment="0" min="-2" pref="20" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="Home_Address_TextField2" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="teacher_adress_label1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="Home_Address_TextField3" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="teacher_addres_label2" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="Home_Address_TextField4" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="62" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="Position_Label" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="Position_TextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="Position_Edit_btn" alignment="3" min="-2" pref="20" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="Subject_TextField" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="Subjects_Edit_btn" alignment="0" min="-2" pref="20" max="-2" attributes="0"/>
+                                      <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                                          <Component id="Subject_TextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="Subjects_Edit_btn" alignment="3" min="-2" pref="20" max="-2" attributes="0"/>
+                                      </Group>
                                       <Component id="Subject_Label" alignment="0" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace max="-2" attributes="0"/>
@@ -206,7 +238,7 @@
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="Change_image_Btn" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="147" max="32767" attributes="0"/>
+                          <EmptySpace pref="155" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -476,6 +508,39 @@
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Change_image_BtnActionPerformed"/>
                   </Events>
                 </Component>
+                <Component class="javax.swing.JTextField" name="Home_Address_TextField2">
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Home_Address_TextField2ActionPerformed"/>
+                  </Events>
+                </Component>
+                <Component class="javax.swing.JTextField" name="Home_Address_TextField3">
+                </Component>
+                <Component class="javax.swing.JTextField" name="Home_Address_TextField4">
+                </Component>
+                <Component class="javax.swing.JLabel" name="teacher_addres_label2">
+                  <Properties>
+                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="99" green="99" red="99" type="rgb"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="City"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="teacher_adress_label1">
+                  <Properties>
+                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="99" green="99" red="99" type="rgb"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Road"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="teacher_adress_label">
+                  <Properties>
+                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="99" green="99" red="99" type="rgb"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Post No."/>
+                  </Properties>
+                </Component>
               </SubComponents>
             </Container>
           </SubComponents>
@@ -495,18 +560,18 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jScrollPane1" max="32767" attributes="0"/>
+                          <Component id="Updatemarks_ViewMarks_panal" max="32767" attributes="0"/>
                           <Group type="102" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="Updatemarks_ViewMarks_panal" max="32767" attributes="0"/>
-                                  <Group type="102" attributes="0">
-                                      <Component id="Update_marks_Selecting_panal" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                                  </Group>
-                              </Group>
-                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="Update_marks_Selecting_panal" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                           </Group>
                       </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="132" max="-2" attributes="0"/>
+                      <Component id="jScrollPane1" min="-2" pref="589" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -514,9 +579,9 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <Component id="Update_marks_Selecting_panal" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
-                      <Component id="jScrollPane1" min="-2" pref="260" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="155" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="jScrollPane1" min="-2" pref="401" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="Updatemarks_ViewMarks_panal" max="32767" attributes="0"/>
                   </Group>
               </Group>
@@ -545,12 +610,14 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
                           <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="Select_subject_LAbel" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="Select_subject_ComboBox" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Group type="103" alignment="3" groupAlignment="3" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="103" alignment="0" groupAlignment="3" attributes="0">
                                   <Component id="Select_subject_LAbel1" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="Select_subject_ComboBox1" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="Select_subject_LAbel" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="Select_subject_ComboBox" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                           <EmptySpace pref="31" max="32767" attributes="0"/>
@@ -606,12 +673,12 @@
               <Layout>
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <EmptySpace min="0" pref="934" max="32767" attributes="0"/>
+                      <EmptySpace min="0" pref="952" max="32767" attributes="0"/>
                   </Group>
                 </DimensionLayout>
                 <DimensionLayout dim="1">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <EmptySpace min="0" pref="27" max="32767" attributes="0"/>
+                      <EmptySpace min="0" pref="35" max="32767" attributes="0"/>
                   </Group>
                 </DimensionLayout>
               </Layout>
@@ -623,22 +690,28 @@
 
               <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
               <SubComponents>
-                <Component class="javax.swing.JTable" name="jTable1">
+                <Component class="javax.swing.JTable" name="student_Mark_enter_table">
                   <Properties>
                     <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
-                      <Table columnCount="2" rowCount="31">
+                      <Table columnCount="3" rowCount="31">
+                        <Column editable="true" title="Index No" type="java.lang.Object"/>
                         <Column editable="true" title="Student Name" type="java.lang.String"/>
                         <Column editable="true" title="Marks" type="java.lang.Integer"/>
                       </Table>
                     </Property>
                     <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
                       <TableColumnModel selectionModel="0">
-                        <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="false">
+                        <Column maxWidth="70" minWidth="70" prefWidth="70" resizable="true">
                           <Title/>
                           <Editor/>
                           <Renderer/>
                         </Column>
-                        <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                        <Column maxWidth="350" minWidth="300" prefWidth="350" resizable="true">
+                          <Title/>
+                          <Editor/>
+                          <Renderer/>
+                        </Column>
+                        <Column maxWidth="150" minWidth="150" prefWidth="150" resizable="true">
                           <Title/>
                           <Editor/>
                           <Renderer/>

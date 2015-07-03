@@ -54,6 +54,12 @@ public class Teacher_teacher_view extends javax.swing.JInternalFrame {
         Extra_Edit_btn = new javax.swing.JButton();
         TeacherName_Edit_btn = new javax.swing.JButton();
         Change_image_Btn = new javax.swing.JButton();
+        Home_Address_TextField2 = new javax.swing.JTextField();
+        Home_Address_TextField3 = new javax.swing.JTextField();
+        Home_Address_TextField4 = new javax.swing.JTextField();
+        teacher_addres_label2 = new javax.swing.JLabel();
+        teacher_adress_label1 = new javax.swing.JLabel();
+        teacher_adress_label = new javax.swing.JLabel();
         T_Tab_UpdateMarks = new javax.swing.JPanel();
         Update_marks_Selecting_panal = new javax.swing.JPanel();
         Select_subject_ComboBox = new javax.swing.JComboBox();
@@ -62,7 +68,7 @@ public class Teacher_teacher_view extends javax.swing.JInternalFrame {
         Select_subject_ComboBox1 = new javax.swing.JComboBox();
         Updatemarks_ViewMarks_panal = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        student_Mark_enter_table = new javax.swing.JTable();
         jPanel1 = new javax.swing.JPanel();
 
         Teacher_image_Label.setBackground(new java.awt.Color(255, 255, 255));
@@ -129,6 +135,21 @@ public class Teacher_teacher_view extends javax.swing.JInternalFrame {
             }
         });
 
+        Home_Address_TextField2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Home_Address_TextField2ActionPerformed(evt);
+            }
+        });
+
+        teacher_addres_label2.setForeground(new java.awt.Color(153, 153, 153));
+        teacher_addres_label2.setText("City");
+
+        teacher_adress_label1.setForeground(new java.awt.Color(153, 153, 153));
+        teacher_adress_label1.setText("Road");
+
+        teacher_adress_label.setForeground(new java.awt.Color(153, 153, 153));
+        teacher_adress_label.setText("Post No.");
+
         javax.swing.GroupLayout T_ViewPrfile_ImageBox_panelLayout = new javax.swing.GroupLayout(T_ViewPrfile_ImageBox_panel);
         T_ViewPrfile_ImageBox_panel.setLayout(T_ViewPrfile_ImageBox_panelLayout);
         T_ViewPrfile_ImageBox_panelLayout.setHorizontalGroup(
@@ -142,53 +163,66 @@ public class Teacher_teacher_view extends javax.swing.JInternalFrame {
                         .addGap(75, 75, 75)
                         .addGroup(T_ViewPrfile_ImageBox_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(T_ViewPrfile_ImageBox_panelLayout.createSequentialGroup()
+                                .addComponent(Subject_Label, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(Subject_TextField)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(Subjects_Edit_btn)
+                                .addGap(26, 26, 26))
+                            .addGroup(T_ViewPrfile_ImageBox_panelLayout.createSequentialGroup()
                                 .addGroup(T_ViewPrfile_ImageBox_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                     .addComponent(Birthday_Label, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addComponent(ID_Number_Label, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(Home_Address_Label, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, T_ViewPrfile_ImageBox_panelLayout.createSequentialGroup()
-                                        .addComponent(Position_Label)
-                                        .addGap(0, 0, Short.MAX_VALUE))
-                                    .addComponent(Subject_Label, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                    .addComponent(Home_Address_Label, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 89, Short.MAX_VALUE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(T_ViewPrfile_ImageBox_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addGroup(T_ViewPrfile_ImageBox_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(T_ViewPrfile_ImageBox_panelLayout.createSequentialGroup()
-                                        .addComponent(Position_TextField)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(Position_Edit_btn))
-                                    .addGroup(T_ViewPrfile_ImageBox_panelLayout.createSequentialGroup()
-                                        .addComponent(Subject_TextField)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(Subjects_Edit_btn))
-                                    .addGroup(T_ViewPrfile_ImageBox_panelLayout.createSequentialGroup()
-                                        .addGroup(T_ViewPrfile_ImageBox_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGroup(T_ViewPrfile_ImageBox_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                            .addComponent(ID_number_TextField, javax.swing.GroupLayout.Alignment.LEADING)
                                             .addGroup(T_ViewPrfile_ImageBox_panelLayout.createSequentialGroup()
-                                                .addGroup(T_ViewPrfile_ImageBox_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                                    .addComponent(ID_number_TextField, javax.swing.GroupLayout.Alignment.LEADING)
+                                                .addGroup(T_ViewPrfile_ImageBox_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                                     .addGroup(T_ViewPrfile_ImageBox_panelLayout.createSequentialGroup()
                                                         .addComponent(Day_ComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                                        .addComponent(Month_ComboBox, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                        .addComponent(Year_comboBox, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                                .addGap(136, 136, 136))
-                                            .addGroup(T_ViewPrfile_ImageBox_panelLayout.createSequentialGroup()
-                                                .addComponent(Home_Address_TextField)
-                                                .addGap(4, 4, 4)))
+                                                        .addComponent(Month_ComboBox, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                                    .addGroup(T_ViewPrfile_ImageBox_panelLayout.createSequentialGroup()
+                                                        .addComponent(Home_Address_TextField, javax.swing.GroupLayout.PREFERRED_SIZE, 201, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                        .addGap(0, 0, Short.MAX_VALUE)))
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                                .addGroup(T_ViewPrfile_ImageBox_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                    .addComponent(Year_comboBox, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                    .addComponent(teacher_adress_label)
+                                                    .addComponent(teacher_adress_label1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                    .addComponent(teacher_addres_label2, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                        .addGap(136, 136, 136)
                                         .addGroup(T_ViewPrfile_ImageBox_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addComponent(Birthday_Edit_btn, javax.swing.GroupLayout.Alignment.TRAILING)
                                             .addComponent(ID_Number_Edit_Btn, javax.swing.GroupLayout.Alignment.TRAILING)
                                             .addComponent(HomeAddress_Edit_Btn, javax.swing.GroupLayout.Alignment.TRAILING)
                                             .addComponent(TeacherName_Edit_btn, javax.swing.GroupLayout.Alignment.TRAILING))
-                                        .addGap(2, 2, 2))))
+                                        .addGap(32, 32, 32))
+                                    .addGroup(T_ViewPrfile_ImageBox_panelLayout.createSequentialGroup()
+                                        .addGroup(T_ViewPrfile_ImageBox_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                            .addComponent(Home_Address_TextField2, javax.swing.GroupLayout.DEFAULT_SIZE, 187, Short.MAX_VALUE)
+                                            .addComponent(Home_Address_TextField3)
+                                            .addComponent(Home_Address_TextField4))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                             .addGroup(T_ViewPrfile_ImageBox_panelLayout.createSequentialGroup()
-                                .addComponent(Extra_label, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(Extra_TextField, javax.swing.GroupLayout.PREFERRED_SIZE, 428, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(Extra_Edit_btn))
-                            .addComponent(TeacherName_Label, javax.swing.GroupLayout.PREFERRED_SIZE, 329, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(30, 30, 30)
+                                .addGroup(T_ViewPrfile_ImageBox_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(TeacherName_Label, javax.swing.GroupLayout.PREFERRED_SIZE, 329, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(T_ViewPrfile_ImageBox_panelLayout.createSequentialGroup()
+                                        .addComponent(Extra_label, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(Extra_TextField, javax.swing.GroupLayout.PREFERRED_SIZE, 428, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(Extra_Edit_btn))
+                                    .addGroup(T_ViewPrfile_ImageBox_panelLayout.createSequentialGroup()
+                                        .addComponent(Position_Label)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(Position_TextField, javax.swing.GroupLayout.PREFERRED_SIZE, 427, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(Position_Edit_btn)))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                         .addComponent(Teacher_image_Label)))
                 .addGap(54, 54, 54))
         );
@@ -222,20 +256,32 @@ public class Teacher_teacher_view extends javax.swing.JInternalFrame {
                                 .addComponent(Birthday_Edit_btn, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(ID_Number_Edit_Btn, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(T_ViewPrfile_ImageBox_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(Home_Address_Label)
-                            .addComponent(Home_Address_TextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(HomeAddress_Edit_Btn, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(39, 39, 39)
                         .addGroup(T_ViewPrfile_ImageBox_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(HomeAddress_Edit_Btn, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(T_ViewPrfile_ImageBox_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(Position_Label)
-                                .addComponent(Position_TextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(Home_Address_Label)
+                                .addComponent(Home_Address_TextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(teacher_adress_label)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(T_ViewPrfile_ImageBox_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(Home_Address_TextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(teacher_adress_label1))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(T_ViewPrfile_ImageBox_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(Home_Address_TextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(teacher_addres_label2))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Home_Address_TextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(62, 62, 62)
+                        .addGroup(T_ViewPrfile_ImageBox_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(Position_Label)
+                            .addComponent(Position_TextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(Position_Edit_btn, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(T_ViewPrfile_ImageBox_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(Subject_TextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Subjects_Edit_btn, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(T_ViewPrfile_ImageBox_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(Subject_TextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(Subjects_Edit_btn, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(Subject_Label))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(T_ViewPrfile_ImageBox_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -244,14 +290,14 @@ public class Teacher_teacher_view extends javax.swing.JInternalFrame {
                             .addComponent(Extra_TextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(Change_image_Btn)
-                .addContainerGap(147, Short.MAX_VALUE))
+                .addContainerGap(155, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout T_Tab_ViewProfileLayout = new javax.swing.GroupLayout(T_Tab_ViewProfile);
         T_Tab_ViewProfile.setLayout(T_Tab_ViewProfileLayout);
         T_Tab_ViewProfileLayout.setHorizontalGroup(
             T_Tab_ViewProfileLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(T_ViewPrfile_ImageBox_panel, javax.swing.GroupLayout.PREFERRED_SIZE, 975, Short.MAX_VALUE)
+            .addComponent(T_ViewPrfile_ImageBox_panel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         T_Tab_ViewProfileLayout.setVerticalGroup(
             T_Tab_ViewProfileLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -289,12 +335,13 @@ public class Teacher_teacher_view extends javax.swing.JInternalFrame {
             Update_marks_Selecting_panalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(Update_marks_Selecting_panalLayout.createSequentialGroup()
                 .addGap(16, 16, 16)
-                .addGroup(Update_marks_Selecting_panalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(Select_subject_LAbel)
-                    .addComponent(Select_subject_ComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(Update_marks_Selecting_panalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(Update_marks_Selecting_panalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(Select_subject_LAbel1)
-                        .addComponent(Select_subject_ComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(Select_subject_ComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(Update_marks_Selecting_panalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(Select_subject_LAbel)
+                        .addComponent(Select_subject_ComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(31, Short.MAX_VALUE))
         );
 
@@ -302,62 +349,70 @@ public class Teacher_teacher_view extends javax.swing.JInternalFrame {
         Updatemarks_ViewMarks_panal.setLayout(Updatemarks_ViewMarks_panalLayout);
         Updatemarks_ViewMarks_panalLayout.setHorizontalGroup(
             Updatemarks_ViewMarks_panalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 934, Short.MAX_VALUE)
+            .addGap(0, 952, Short.MAX_VALUE)
         );
         Updatemarks_ViewMarks_panalLayout.setVerticalGroup(
             Updatemarks_ViewMarks_panalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 27, Short.MAX_VALUE)
+            .addGap(0, 35, Short.MAX_VALUE)
         );
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        student_Mark_enter_table.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null}
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null}
             },
             new String [] {
-                "Student Name", "Marks"
+                "Index No", "Student Name", "Marks"
             }
         ) {
             Class[] types = new Class [] {
-                java.lang.String.class, java.lang.Integer.class
+                java.lang.Object.class, java.lang.String.class, java.lang.Integer.class
             };
 
             public Class getColumnClass(int columnIndex) {
                 return types [columnIndex];
             }
         });
-        jScrollPane1.setViewportView(jTable1);
-        if (jTable1.getColumnModel().getColumnCount() > 0) {
-            jTable1.getColumnModel().getColumn(0).setResizable(false);
+        jScrollPane1.setViewportView(student_Mark_enter_table);
+        if (student_Mark_enter_table.getColumnModel().getColumnCount() > 0) {
+            student_Mark_enter_table.getColumnModel().getColumn(0).setMinWidth(70);
+            student_Mark_enter_table.getColumnModel().getColumn(0).setPreferredWidth(70);
+            student_Mark_enter_table.getColumnModel().getColumn(0).setMaxWidth(70);
+            student_Mark_enter_table.getColumnModel().getColumn(1).setMinWidth(300);
+            student_Mark_enter_table.getColumnModel().getColumn(1).setPreferredWidth(350);
+            student_Mark_enter_table.getColumnModel().getColumn(1).setMaxWidth(350);
+            student_Mark_enter_table.getColumnModel().getColumn(2).setMinWidth(150);
+            student_Mark_enter_table.getColumnModel().getColumn(2).setPreferredWidth(150);
+            student_Mark_enter_table.getColumnModel().getColumn(2).setMaxWidth(150);
         }
 
         javax.swing.GroupLayout T_Tab_UpdateMarksLayout = new javax.swing.GroupLayout(T_Tab_UpdateMarks);
@@ -367,22 +422,23 @@ public class Teacher_teacher_view extends javax.swing.JInternalFrame {
             .addGroup(T_Tab_UpdateMarksLayout.createSequentialGroup()
                 .addGap(31, 31, 31)
                 .addGroup(T_Tab_UpdateMarksLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane1)
+                    .addComponent(Updatemarks_ViewMarks_panal, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(T_Tab_UpdateMarksLayout.createSequentialGroup()
-                        .addGroup(T_Tab_UpdateMarksLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(Updatemarks_ViewMarks_panal, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addGroup(T_Tab_UpdateMarksLayout.createSequentialGroup()
-                                .addComponent(Update_marks_Selecting_panal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(0, 0, Short.MAX_VALUE)))
-                        .addContainerGap())))
+                        .addComponent(Update_marks_Selecting_panal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
+            .addGroup(T_Tab_UpdateMarksLayout.createSequentialGroup()
+                .addGap(132, 132, 132)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 589, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         T_Tab_UpdateMarksLayout.setVerticalGroup(
             T_Tab_UpdateMarksLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(T_Tab_UpdateMarksLayout.createSequentialGroup()
                 .addComponent(Update_marks_Selecting_panal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(22, 22, 22)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 260, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(155, 155, 155)
+                .addGap(18, 18, 18)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 401, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
                 .addComponent(Updatemarks_ViewMarks_panal, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -427,6 +483,10 @@ public class Teacher_teacher_view extends javax.swing.JInternalFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_Change_image_BtnActionPerformed
 
+    private void Home_Address_TextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Home_Address_TextField2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Home_Address_TextField2ActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton Birthday_Edit_btn;
@@ -439,6 +499,9 @@ public class Teacher_teacher_view extends javax.swing.JInternalFrame {
     private javax.swing.JButton HomeAddress_Edit_Btn;
     private javax.swing.JLabel Home_Address_Label;
     private javax.swing.JTextField Home_Address_TextField;
+    private javax.swing.JTextField Home_Address_TextField2;
+    private javax.swing.JTextField Home_Address_TextField3;
+    private javax.swing.JTextField Home_Address_TextField4;
     private javax.swing.JButton ID_Number_Edit_Btn;
     private javax.swing.JLabel ID_Number_Label;
     private javax.swing.JTextField ID_number_TextField;
@@ -465,6 +528,9 @@ public class Teacher_teacher_view extends javax.swing.JInternalFrame {
     private javax.swing.JComboBox Year_comboBox;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
+    private javax.swing.JTable student_Mark_enter_table;
+    private javax.swing.JLabel teacher_addres_label2;
+    private javax.swing.JLabel teacher_adress_label;
+    private javax.swing.JLabel teacher_adress_label1;
     // End of variables declaration//GEN-END:variables
 }
