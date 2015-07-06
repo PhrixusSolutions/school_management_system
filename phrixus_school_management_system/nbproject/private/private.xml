@@ -3,44 +3,21 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/G:/Phrixus/Git/school_management_system/phrixus_school_management_system/src/Model/O_Level_Result.java</file>
-            <file>file:/G:/Phrixus/Git/school_management_system/phrixus_school_management_system/src/Controller/GradeController.java</file>
-            <file>file:/G:/Phrixus/Git/school_management_system/phrixus_school_management_system/src/db/DB_Handler.java</file>
-            <file>file:/G:/Phrixus/Git/school_management_system/phrixus_school_management_system/src/Controller/StudentController.java</file>
-            <file>file:/G:/Phrixus/Git/school_management_system/phrixus_school_management_system/src/Model/TermTestResult.java</file>
-            <file>file:/G:/Phrixus/Git/school_management_system/phrixus_school_management_system/src/Model/AcademicMember.java</file>
-            <file>file:/G:/Phrixus/Git/school_management_system/phrixus_school_management_system/src/Model/Society.java</file>
-            <file>file:/G:/Phrixus/Git/school_management_system/phrixus_school_management_system/src/Controller/GuardianController.java</file>
-            <file>file:/G:/Phrixus/Git/school_management_system/phrixus_school_management_system/src/Model/ClassRoom.java</file>
-            <file>file:/G:/Phrixus/Git/school_management_system/phrixus_school_management_system/src/Controller/ClassRoomController.java</file>
-            <file>file:/G:/Phrixus/Git/school_management_system/phrixus_school_management_system/src/Controller/PeriodController.java</file>
-            <file>file:/G:/Phrixus/Git/school_management_system/phrixus_school_management_system/src/gui/student/S1.java</file>
-            <file>file:/G:/Phrixus/Git/school_management_system/phrixus_school_management_system/src/db/DB_Connection.java</file>
-            <file>file:/G:/Phrixus/Git/school_management_system/phrixus_school_management_system/src/Controller/TermTestController.java</file>
-            <file>file:/G:/Phrixus/Git/school_management_system/phrixus_school_management_system/src/Controller/O_LevelController.java</file>
-            <file>file:/G:/Phrixus/Git/school_management_system/phrixus_school_management_system/src/Model/Grade.java</file>
-            <file>file:/G:/Phrixus/Git/school_management_system/phrixus_school_management_system/src/Model/TimeTable.java</file>
-            <file>file:/G:/Phrixus/Git/school_management_system/phrixus_school_management_system/src/Controller/TimeTableController.java</file>
-            <file>file:/G:/Phrixus/Git/school_management_system/phrixus_school_management_system/src/Model/A_Level_Result.java</file>
-            <file>file:/G:/Phrixus/Git/school_management_system/phrixus_school_management_system/src/Controller/AchievementController.java</file>
-            <file>file:/G:/Phrixus/Git/school_management_system/phrixus_school_management_system/src/Model/Guardian.java</file>
-            <file>file:/G:/Phrixus/Git/school_management_system/phrixus_school_management_system/src/Controller/EnrollmentController.java</file>
-            <file>file:/G:/Phrixus/Git/school_management_system/phrixus_school_management_system/src/Model/Student.java</file>
-            <file>file:/G:/Phrixus/Git/school_management_system/phrixus_school_management_system/src/Model/Achievement.java</file>
-            <file>file:/G:/Phrixus/Git/school_management_system/phrixus_school_management_system/src/Controller/A_LevelController.java</file>
-            <file>file:/G:/Phrixus/Git/school_management_system/phrixus_school_management_system/src/Controller/ExamController.java</file>
-            <file>file:/G:/Phrixus/Git/school_management_system/phrixus_school_management_system/src/Model/Attendance.java</file>
-            <file>file:/G:/Phrixus/Git/school_management_system/phrixus_school_management_system/src/Model/Subject.java</file>
-            <file>file:/G:/Phrixus/Git/school_management_system/phrixus_school_management_system/src/Model/Exam.java</file>
-            <file>file:/G:/Phrixus/Git/school_management_system/phrixus_school_management_system/src/Controller/SubjectController.java</file>
-            <file>file:/G:/Phrixus/Git/school_management_system/phrixus_school_management_system/src/Controller/SocietyController.java</file>
-            <file>file:/G:/Phrixus/Git/school_management_system/phrixus_school_management_system/src/Controller/SocietyPositionController.java</file>
-            <file>file:/G:/Phrixus/Git/school_management_system/phrixus_school_management_system/src/Controller/AttendanceController.java</file>
-            <file>file:/G:/Phrixus/Git/school_management_system/phrixus_school_management_system/src/Model/SocietyPosition.java</file>
-            <file>file:/G:/Phrixus/Git/school_management_system/phrixus_school_management_system/src/Model/Enrollment.java</file>
-            <file>file:/G:/Phrixus/Git/school_management_system/phrixus_school_management_system/src/Controller/AcademicStaffController.java</file>
-            <file>file:/G:/Phrixus/Git/school_management_system/phrixus_school_management_system/src/Model/Period.java</file>
-            <file>file:/G:/Phrixus/Git/school_management_system/phrixus_school_management_system/src/gui/clerk/StudentMainWindow.java</file>
+            <file>file:/F:/Phrixus/phrixus_school_management_system/src/db/DB_Connection.java</file>
+            <file>file:/F:/Phrixus/phrixus_school_management_system/src/Model/Subject.java</file>
+            <file>file:/F:/Phrixus/phrixus_school_management_system/src/Model/Guardian.java</file>
+            <file>file:/F:/Phrixus/phrixus_school_management_system/src/gui/clerk/StudentMainWindow.java</file>
+            <file>file:/F:/Phrixus/phrixus_school_management_system/src/gui/mainSoftwareFrame.java</file>
+            <file>file:/F:/Phrixus/phrixus_school_management_system/src/Model/AcademicMember.java</file>
+            <file>file:/F:/Phrixus/phrixus_school_management_system/src/main/MainLogin.java</file>
+            <file>file:/F:/Phrixus/phrixus_school_management_system/src/Model/Grade.java</file>
+            <file>file:/F:/Phrixus/phrixus_school_management_system/src/gui/student/main_page.java</file>
+            <file>file:/F:/Phrixus/phrixus_school_management_system/src/Controller/A_LevelController.java</file>
+            <file>file:/F:/Phrixus/phrixus_school_management_system/src/Model/Student.java</file>
+            <file>file:/F:/Phrixus/phrixus_school_management_system/src/gui/student/Tmetable.java</file>
+            <file>file:/F:/Phrixus/phrixus_school_management_system/src/Model/ClassRoom.java</file>
+            <file>file:/F:/Phrixus/phrixus_school_management_system/src/Model/A_Level_Result.java</file>
+            <file>file:/F:/Phrixus/phrixus_school_management_system/src/gui/student/teachers_Profile.java</file>
         </group>
     </open-files>
 </project-private>
