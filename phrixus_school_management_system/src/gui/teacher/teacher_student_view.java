@@ -27,66 +27,402 @@ public class teacher_student_view extends javax.swing.JInternalFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        Teacher_teacher_view_tabPane = new javax.swing.JTabbedPane();
+        Student_search_panel = new javax.swing.JPanel();
+        search_student_panel = new javax.swing.JPanel();
+        search_studentByNameComboBox = new javax.swing.JComboBox();
+        Search_Student_ByName_Label = new javax.swing.JLabel();
+        showAllStudent_CheakBox = new javax.swing.JCheckBox();
+        studentDetails_Search_Btn = new javax.swing.JButton();
+        search_tools_panel = new javax.swing.JPanel();
+        ByName_RadioButton = new javax.swing.JRadioButton();
+        ByIndexNumber_RadioButton = new javax.swing.JRadioButton();
+        ByOccupation_RadioButton = new javax.swing.JRadioButton();
+        student_details_panel = new javax.swing.JPanel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        student_details_table = new javax.swing.JTable();
+        AdvanceSearchTools_panel = new javax.swing.JPanel();
+        fatherName_cheakBox = new javax.swing.JCheckBox();
+        FatherOccupation_cheakBox = new javax.swing.JCheckBox();
+        MotherName_CheakBox = new javax.swing.JCheckBox();
+        MotherOccupation_cheakBox = new javax.swing.JCheckBox();
+        Extra_cheakBox = new javax.swing.JCheckBox();
+        index_number_CheakBox = new javax.swing.JCheckBox();
+        student_name_CheckBox = new javax.swing.JCheckBox();
+        Home_Address_CheckBox = new javax.swing.JCheckBox();
+        Contact_number_CheckBox = new javax.swing.JCheckBox();
         jPanel1 = new javax.swing.JPanel();
-        jComboBox1 = new javax.swing.JComboBox();
-        jPanel2 = new javax.swing.JPanel();
 
-        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createTitledBorder("Search Teacher")), "search Teacher", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 12))); // NOI18N
+        search_student_panel.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createTitledBorder("Search Teacher")), "Search Student", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 12))); // NOI18N
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        search_studentByNameComboBox.setEditable(true);
+        search_studentByNameComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+
+        Search_Student_ByName_Label.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        Search_Student_ByName_Label.setText("Search Student  :");
+
+        showAllStudent_CheakBox.setText("Show All Students in the Class");
+        showAllStudent_CheakBox.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                showAllStudent_CheakBoxActionPerformed(evt);
+            }
+        });
+
+        studentDetails_Search_Btn.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        studentDetails_Search_Btn.setText("Search");
+
+        ByName_RadioButton.setText("By Name");
+        ByName_RadioButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ByName_RadioButtonActionPerformed(evt);
+            }
+        });
+
+        ByIndexNumber_RadioButton.setText("By Index Number");
+
+        ByOccupation_RadioButton.setText("By Parent's Occupation");
+
+        javax.swing.GroupLayout search_tools_panelLayout = new javax.swing.GroupLayout(search_tools_panel);
+        search_tools_panel.setLayout(search_tools_panelLayout);
+        search_tools_panelLayout.setHorizontalGroup(
+            search_tools_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(search_tools_panelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(ByName_RadioButton)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(ByIndexNumber_RadioButton)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(ByOccupation_RadioButton, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(48, Short.MAX_VALUE))
+        );
+        search_tools_panelLayout.setVerticalGroup(
+            search_tools_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(search_tools_panelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(search_tools_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(ByName_RadioButton)
+                    .addComponent(ByIndexNumber_RadioButton)
+                    .addComponent(ByOccupation_RadioButton))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout search_student_panelLayout = new javax.swing.GroupLayout(search_student_panel);
+        search_student_panel.setLayout(search_student_panelLayout);
+        search_student_panelLayout.setHorizontalGroup(
+            search_student_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(search_student_panelLayout.createSequentialGroup()
+                .addGap(142, 142, 142)
+                .addGroup(search_student_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(search_student_panelLayout.createSequentialGroup()
+                        .addComponent(Search_Student_ByName_Label, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(search_studentByNameComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, 459, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(search_tools_panel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(176, 176, 176)
+                .addGroup(search_student_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(showAllStudent_CheakBox)
+                    .addComponent(studentDetails_Search_Btn, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        search_student_panelLayout.setVerticalGroup(
+            search_student_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(search_student_panelLayout.createSequentialGroup()
+                .addGap(0, 11, Short.MAX_VALUE)
+                .addGroup(search_student_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(studentDetails_Search_Btn, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(search_tools_panel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(search_student_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(showAllStudent_CheakBox)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, search_student_panelLayout.createSequentialGroup()
+                        .addGroup(search_student_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(Search_Student_ByName_Label)
+                            .addComponent(search_studentByNameComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addContainerGap())))
+        );
+
+        student_details_panel.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Student Details", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 12))); // NOI18N
+
+        student_details_table.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null}
+            },
+            new String [] {
+                "Index", "Student Name", "Student Address", "Contact Number", "extra"
+            }
+        ));
+        jScrollPane1.setViewportView(student_details_table);
+        if (student_details_table.getColumnModel().getColumnCount() > 0) {
+            student_details_table.getColumnModel().getColumn(0).setMinWidth(100);
+            student_details_table.getColumnModel().getColumn(0).setPreferredWidth(100);
+            student_details_table.getColumnModel().getColumn(0).setMaxWidth(100);
+            student_details_table.getColumnModel().getColumn(1).setMinWidth(300);
+            student_details_table.getColumnModel().getColumn(1).setPreferredWidth(300);
+            student_details_table.getColumnModel().getColumn(1).setMaxWidth(300);
+            student_details_table.getColumnModel().getColumn(2).setMinWidth(300);
+            student_details_table.getColumnModel().getColumn(2).setPreferredWidth(300);
+            student_details_table.getColumnModel().getColumn(2).setMaxWidth(300);
+            student_details_table.getColumnModel().getColumn(3).setMinWidth(200);
+            student_details_table.getColumnModel().getColumn(3).setPreferredWidth(200);
+            student_details_table.getColumnModel().getColumn(3).setMaxWidth(200);
+        }
+
+        AdvanceSearchTools_panel.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "                          Advance Search Tools", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 11))); // NOI18N
+
+        fatherName_cheakBox.setText("Father's Name");
+        fatherName_cheakBox.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fatherName_cheakBoxActionPerformed(evt);
+            }
+        });
+
+        FatherOccupation_cheakBox.setText("Father's Occupation");
+        FatherOccupation_cheakBox.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                FatherOccupation_cheakBoxActionPerformed(evt);
+            }
+        });
+
+        MotherName_CheakBox.setText("Mother's Name");
+        MotherName_CheakBox.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MotherName_CheakBoxActionPerformed(evt);
+            }
+        });
+
+        MotherOccupation_cheakBox.setText("Mother's Occupation");
+        MotherOccupation_cheakBox.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MotherOccupation_cheakBoxActionPerformed(evt);
+            }
+        });
+
+        Extra_cheakBox.setSelected(true);
+        Extra_cheakBox.setText("Extra");
+        Extra_cheakBox.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Extra_cheakBoxActionPerformed(evt);
+            }
+        });
+
+        index_number_CheakBox.setSelected(true);
+        index_number_CheakBox.setText("Index Number");
+        index_number_CheakBox.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                index_number_CheakBoxActionPerformed(evt);
+            }
+        });
+
+        student_name_CheckBox.setSelected(true);
+        student_name_CheckBox.setText("Student Name");
+        student_name_CheckBox.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                student_name_CheckBoxActionPerformed(evt);
+            }
+        });
+
+        Home_Address_CheckBox.setSelected(true);
+        Home_Address_CheckBox.setText("Home Address");
+        Home_Address_CheckBox.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Home_Address_CheckBoxActionPerformed(evt);
+            }
+        });
+
+        Contact_number_CheckBox.setSelected(true);
+        Contact_number_CheckBox.setText("Contact Number");
+        Contact_number_CheckBox.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Contact_number_CheckBoxActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout AdvanceSearchTools_panelLayout = new javax.swing.GroupLayout(AdvanceSearchTools_panel);
+        AdvanceSearchTools_panel.setLayout(AdvanceSearchTools_panelLayout);
+        AdvanceSearchTools_panelLayout.setHorizontalGroup(
+            AdvanceSearchTools_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, AdvanceSearchTools_panelLayout.createSequentialGroup()
+                .addContainerGap(143, Short.MAX_VALUE)
+                .addGroup(AdvanceSearchTools_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(index_number_CheakBox)
+                    .addComponent(student_name_CheckBox))
+                .addGap(70, 70, 70)
+                .addGroup(AdvanceSearchTools_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(Home_Address_CheckBox, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(Contact_number_CheckBox, javax.swing.GroupLayout.DEFAULT_SIZE, 121, Short.MAX_VALUE))
+                .addGap(41, 41, 41)
+                .addGroup(AdvanceSearchTools_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(fatherName_cheakBox)
+                    .addComponent(FatherOccupation_cheakBox))
+                .addGap(47, 47, 47)
+                .addGroup(AdvanceSearchTools_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(AdvanceSearchTools_panelLayout.createSequentialGroup()
+                        .addComponent(MotherOccupation_cheakBox)
+                        .addGap(234, 234, 234))
+                    .addGroup(AdvanceSearchTools_panelLayout.createSequentialGroup()
+                        .addComponent(MotherName_CheakBox)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(Extra_cheakBox)
+                        .addGap(103, 103, 103))))
+        );
+        AdvanceSearchTools_panelLayout.setVerticalGroup(
+            AdvanceSearchTools_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(AdvanceSearchTools_panelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(AdvanceSearchTools_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(index_number_CheakBox)
+                    .addComponent(Home_Address_CheckBox)
+                    .addComponent(fatherName_cheakBox)
+                    .addComponent(MotherName_CheakBox)
+                    .addComponent(Extra_cheakBox))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(AdvanceSearchTools_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(student_name_CheckBox)
+                    .addComponent(Contact_number_CheckBox)
+                    .addComponent(FatherOccupation_cheakBox)
+                    .addComponent(MotherOccupation_cheakBox))
+                .addContainerGap(15, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout student_details_panelLayout = new javax.swing.GroupLayout(student_details_panel);
+        student_details_panel.setLayout(student_details_panelLayout);
+        student_details_panelLayout.setHorizontalGroup(
+            student_details_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, student_details_panelLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(student_details_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jScrollPane1)
+                    .addComponent(AdvanceSearchTools_panel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(23, 23, 23))
+        );
+        student_details_panelLayout.setVerticalGroup(
+            student_details_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, student_details_panelLayout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addComponent(AdvanceSearchTools_panel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 224, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout Student_search_panelLayout = new javax.swing.GroupLayout(Student_search_panel);
+        Student_search_panel.setLayout(Student_search_panelLayout);
+        Student_search_panelLayout.setHorizontalGroup(
+            Student_search_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(search_student_panel, javax.swing.GroupLayout.PREFERRED_SIZE, 1074, Short.MAX_VALUE)
+            .addComponent(student_details_panel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        Student_search_panelLayout.setVerticalGroup(
+            Student_search_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Student_search_panelLayout.createSequentialGroup()
+                .addComponent(search_student_panel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(student_details_panel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        Teacher_teacher_view_tabPane.addTab("Student Details", Student_search_panel);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(296, 296, 296)
-                .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 247, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(420, Short.MAX_VALUE))
+            .addGap(0, 1074, Short.MAX_VALUE)
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(30, 30, 30)
-                .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(65, Short.MAX_VALUE))
+            .addGap(0, 507, Short.MAX_VALUE)
         );
 
-        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "My Class Teachers", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 12))); // NOI18N
-
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 313, Short.MAX_VALUE)
-        );
+        Teacher_teacher_view_tabPane.addTab("tab2", jPanel1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(Teacher_teacher_view_tabPane)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addComponent(Teacher_teacher_view_tabPane)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void fatherName_cheakBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fatherName_cheakBoxActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_fatherName_cheakBoxActionPerformed
+
+    private void FatherOccupation_cheakBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FatherOccupation_cheakBoxActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_FatherOccupation_cheakBoxActionPerformed
+
+    private void MotherName_CheakBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MotherName_CheakBoxActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_MotherName_CheakBoxActionPerformed
+
+    private void MotherOccupation_cheakBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MotherOccupation_cheakBoxActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_MotherOccupation_cheakBoxActionPerformed
+
+    private void Extra_cheakBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Extra_cheakBoxActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Extra_cheakBoxActionPerformed
+
+    private void showAllStudent_CheakBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_showAllStudent_CheakBoxActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_showAllStudent_CheakBoxActionPerformed
+
+    private void index_number_CheakBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_index_number_CheakBoxActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_index_number_CheakBoxActionPerformed
+
+    private void student_name_CheckBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_student_name_CheckBoxActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_student_name_CheckBoxActionPerformed
+
+    private void Home_Address_CheckBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Home_Address_CheckBoxActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Home_Address_CheckBoxActionPerformed
+
+    private void Contact_number_CheckBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Contact_number_CheckBoxActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Contact_number_CheckBoxActionPerformed
+
+    private void ByName_RadioButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ByName_RadioButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ByName_RadioButtonActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JComboBox jComboBox1;
+    private javax.swing.JPanel AdvanceSearchTools_panel;
+    private javax.swing.JRadioButton ByIndexNumber_RadioButton;
+    private javax.swing.JRadioButton ByName_RadioButton;
+    private javax.swing.JRadioButton ByOccupation_RadioButton;
+    private javax.swing.JCheckBox Contact_number_CheckBox;
+    private javax.swing.JCheckBox Extra_cheakBox;
+    private javax.swing.JCheckBox FatherOccupation_cheakBox;
+    private javax.swing.JCheckBox Home_Address_CheckBox;
+    private javax.swing.JCheckBox MotherName_CheakBox;
+    private javax.swing.JCheckBox MotherOccupation_cheakBox;
+    private javax.swing.JLabel Search_Student_ByName_Label;
+    private javax.swing.JPanel Student_search_panel;
+    private javax.swing.JTabbedPane Teacher_teacher_view_tabPane;
+    private javax.swing.JCheckBox fatherName_cheakBox;
+    private javax.swing.JCheckBox index_number_CheakBox;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JComboBox search_studentByNameComboBox;
+    private javax.swing.JPanel search_student_panel;
+    private javax.swing.JPanel search_tools_panel;
+    private javax.swing.JCheckBox showAllStudent_CheakBox;
+    private javax.swing.JButton studentDetails_Search_Btn;
+    private javax.swing.JPanel student_details_panel;
+    private javax.swing.JTable student_details_table;
+    private javax.swing.JCheckBox student_name_CheckBox;
     // End of variables declaration//GEN-END:variables
 }
