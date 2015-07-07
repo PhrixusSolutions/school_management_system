@@ -11,7 +11,7 @@ package Model;
  */
 public class Guardian {
    private String nic;
-   private String guardianId;
+   private int guardianId;
    private String name;
    private int mobileNo;
    private String occupation;
@@ -24,6 +24,16 @@ public class Guardian {
      */
    public void Guardian(){
    }
+
+    public Guardian(String nic, int guardianId, String name, int mobileNo, String occupation, String officeAddress, int officeTelephoneNo) {
+        this.nic = nic;
+        this.guardianId = guardianId;
+        this.name = name;
+        this.mobileNo = mobileNo;
+        this.occupation = occupation; 
+        this.officeAddress = officeAddress;
+        this.officeTelephoneNo = officeTelephoneNo;
+    }
    
    
     public String getNic() {
@@ -40,14 +50,14 @@ public class Guardian {
     /**
      * @return the guardianId
      */
-    public String getGuardianId() {
+    public int getGuardianId() {
         return guardianId;
     }
 
     /**
      * @param guardianId the guardianId to set
      */
-    public void setGuardianId(String guardianId) {
+    public void setGuardianId(int guardianId) {
         this.guardianId = guardianId;
     }
 

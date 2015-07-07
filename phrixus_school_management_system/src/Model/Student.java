@@ -5,167 +5,124 @@
  */
 package Model;
 
+import java.io.InputStream;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.logging.Logger;
+
 /**
  *
  * @author hp pc
  */
 public class Student {
-    
+    private int studentId;
     private String fullName;
-    private int grade; // current grade 6/7/8/9/10/11/12/13
-    private char className; // A/B/C/D....
-    private String birthday;
-    private String photograph;
+    private String permenantAddress;  
     private String residenceAddress;
     private int telephoneNo;
-    private String permenantAddress;
-    private int studentId;
-    private int guardianId;
-    
-    public void student(){
-    
-    
-    
+    private Date birthday;
+    private InputStream photograph;
+    //private int grade; // current grade 6/7/8/9/10/11/12/13 not needed here
+    private ClassRoom classRoom; //1,2,3,...
+    private ArrayList guardianList;
+
+    public Student() {
     }
 
-    /**
-     * @return the fullName
-     */
-    public String getFullName() {
-        return fullName;
-    }
-
-    /**
-     * @param fullName the fullName to set
-     */
-    public void setFullName(String fullName) {
+    public Student(int studentId, String fullName, String permenantAddress, String residenceAddress, int telephoneNo, Date birthday, InputStream photograph) {
+        this.studentId = studentId;
         this.fullName = fullName;
-    }
-
-    /**
-     * @return the grade
-     */
-    public int getGrade() {
-        return grade;
-    }
-
-    /**
-     * @param grade the grade to set
-     */
-    public void setGrade(int grade) {
-        this.grade = grade;
-    }
-
-    /**
-     * @return the className
-     */
-    public char getClassName() {
-        return className;
-    }
-
-    /**
-     * @param className the className to set
-     */
-    public void setClassName(char className) {
-        this.className = className;
-    }
-
-    /**
-     * @return the birthday
-     */
-    public String getBirthday() {
-        return birthday;
-    }
-
-    /**
-     * @param birthday the birthday to set
-     */
-    public void setBirthday(String birthday) {
-        this.birthday = birthday;
-    }
-
-    /**
-     * @return the photograph
-     */
-    public String getPhotograph() {
-        return photograph;
-    }
-
-    /**
-     * @param photograph the photograph to set
-     */
-    public void setPhotograph(String photograph) {
-        this.photograph = photograph;
-    }
-
-    /**
-     * @return the residenceAddress
-     */
-    public String getResidenceAddress() {
-        return residenceAddress;
-    }
-
-    /**
-     * @param residenceAddress the residenceAddress to set
-     */
-    public void setResidenceAddress(String residenceAddress) {
-        this.residenceAddress = residenceAddress;
-    }
-
-    /**
-     * @return the telephoneNo
-     */
-    public int getTelephoneNo() {
-        return telephoneNo;
-    }
-
-    /**
-     * @param telephoneNo the telephoneNo to set
-     */
-    public void setTelephoneNo(int telephoneNo) {
-        this.telephoneNo = telephoneNo;
-    }
-
-    /**
-     * @return the permenantAddress
-     */
-    public String getPermenantAddress() {
-        return permenantAddress;
-    }
-
-    /**
-     * @param permenantAddress the permenantAddress to set
-     */
-    public void setPermenantAddress(String permenantAddress) {
         this.permenantAddress = permenantAddress;
+        this.residenceAddress = residenceAddress;
+        this.telephoneNo = telephoneNo;
+        this.birthday = birthday;
+        this.photograph = photograph;        
     }
 
-    /**
-     * @return the studentId
-     */
+   
+
     public int getStudentId() {
         return studentId;
     }
 
-    /**
-     * @param studentId the studentId to set
-     */
     public void setStudentId(int studentId) {
         this.studentId = studentId;
     }
 
-    /**
-     * @return the guardianId
-     */
-    public int getGuardianId() {
-        return guardianId;
+    public String getFullName() {
+        return fullName;
     }
 
-    /**
-     * @param guardianId the guardianId to set
-     */
-    public void setGuardianId(int guardianId) {
-        this.guardianId = guardianId;
+    public void setFullName(String fullName) {
+        this.fullName = fullName;
     }
+
+    public String getPermenantAddress() {
+        return permenantAddress;
+    }
+
+    public void setPermenantAddress(String permenantAddress) {
+        this.permenantAddress = permenantAddress;
+    }
+
+    public String getResidenceAddress() {
+        return residenceAddress;
+    }
+
+    public void setResidenceAddress(String residenceAddress) {
+        this.residenceAddress = residenceAddress;
+    }
+
+    public int getTelephoneNo() {
+        return telephoneNo;
+    }
+
+    public void setTelephoneNo(int telephoneNo) {
+        this.telephoneNo = telephoneNo;
+    }
+
+    public Date getBirthday() {
+        return birthday;
+    }
+
+    public void setBirthday(Date birthday) {
+        this.birthday = birthday;
+    }
+
+    public InputStream getPhotograph() {
+        return photograph;
+    }
+
+    public void setPhotograph(InputStream photograph) {
+        this.photograph = photograph;
+    }
+
+    public ClassRoom getClassRoom() {
+        return classRoom;
+    }
+
+    public void setClassRoom(ClassRoom classRoom) {
+        this.classRoom = classRoom;
+    }
+
+    public ArrayList getGuardianList() {
+        return guardianList;
+    }
+
+    public void setGuardianList(ArrayList guardianList) {
+        this.guardianList = guardianList;
+    }
+
+    
+    
+    
+    
+    
+      
+    
+
+    
+    
+    
     
 }

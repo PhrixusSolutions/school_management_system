@@ -410,14 +410,7 @@ public class teacher_student_view extends javax.swing.JInternalFrame {
     }//GEN-LAST:event_ByName_RadioButtonActionPerformed
 
     private void studentDetails_Search_BtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_studentDetails_Search_BtnActionPerformed
-        try {
-            ArrayList<Student> studentList=StudentController.getStudentList("");
-                        // TODO add your handling code here:
-        } catch (ClassNotFoundException ex) {
-            Logger.getLogger(teacher_student_view.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (SQLException ex) {
-            Logger.getLogger(teacher_student_view.class.getName()).log(Level.SEVERE, null, ex);
-        }
+        
     }//GEN-LAST:event_studentDetails_Search_BtnActionPerformed
 
 

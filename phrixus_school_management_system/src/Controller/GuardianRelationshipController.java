@@ -17,16 +17,19 @@ import java.util.ArrayList;
  *
  * @author hp pc
  */
-public class GuardianController {
-    public static Guardian searchGuardianById(int guardianId) throws SQLException, ClassNotFoundException{
-        Guardian guardian=null;
+public class GuardianRelationshipController {
+
+    static ArrayList getGuardians(int studentId) throws SQLException, ClassNotFoundException {
+        ArrayList<Guardian> guardianList=new ArrayList<>();
         Connection connection=DB_Connection.getDBConnection().getConnection();
-        String sql="SELECT * FROM guardian WHERE guardian_id='"+guardianId+"'";
+        String sql="SELECT * FROM guardian_relationship WHERE student_id='"+studentId+"'";
         ResultSet resultSet=DB_Handler.getData(connection, sql);
         while(resultSet.next()){
-            guardian=new Guardian(resultSet.getString("nic"), resultSet.getInt("guardian_id"), resultSet.getString("name"), resultSet.getInt("mobile"), resultSet.getString("occupation"), resultSet.getString("officeAddress"), resultSet.getInt("officeTelephone"));
-            
+            Guardian guardian=GuardianController.searchGuardianById(resultSet.getInt("guardian_id"));
+            guardian.setRelationship(resultSet.getString("relationship"));
+            guardianList.add(guardian);
         }
-        return guardian;
+        return guardianList;
     }
+    
 }
