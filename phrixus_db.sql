@@ -1,10 +1,8 @@
-CREATE DATABASE  IF NOT EXISTS `phrixus_db` /*!40100 DEFAULT CHARACTER SET utf8 */;
-USE `phrixus_db`;
--- MySQL dump 10.13  Distrib 5.6.23, for Win64 (x86_64)
+-- MySQL dump 10.13  Distrib 5.6.24, for Win64 (x86_64)
 --
--- Host: localhost    Database: phrixus_db
+-- Host: 127.0.0.1    Database: phrixus_db
 -- ------------------------------------------------------
--- Server version	5.6.24-log
+-- Server version	5.6.16
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -379,9 +377,9 @@ DROP TABLE IF EXISTS `student`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `student` (
   `student_id` int(11) NOT NULL AUTO_INCREMENT,
-  `full_name` varchar(75) NOT NULL,
-  `permanent_address` varchar(100) NOT NULL,
-  `residence_address` varchar(100) NOT NULL,
+  `full_name` varchar(150) NOT NULL,
+  `permanent_address` varchar(200) NOT NULL,
+  `residence_address` varchar(200) NOT NULL,
   `telephone` int(10) DEFAULT NULL,
   `birthday` date NOT NULL,
   `photograph` blob,
@@ -498,4 +496,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2015-07-05 15:51:04
+-- Dump completed on 2015-07-07 19:29:09

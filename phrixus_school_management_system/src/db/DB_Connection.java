@@ -14,19 +14,22 @@ import java.sql.SQLException;
  */
 public class DB_Connection {
     private static DB_Connection dbConnection;
-	private Connection conn;
+	private Connection connection;
 	
 	private DB_Connection()throws ClassNotFoundException,SQLException{
 		Class.forName("com.mysql.jdbc.Driver");
-		conn=DriverManager.getConnection("jdbc:mysql://localhost/phrixus_db","root", "password");
+		connection=DriverManager.getConnection("jdbc:mysql://localhost/phrixus_db","Phrixus", "phrixus123");
 	}
 	public static DB_Connection getDBConnection()throws ClassNotFoundException,SQLException {
-		if(dbConnection==null){
-			dbConnection=new DB_Connection();
-		}
-		return dbConnection;
+            if(dbConnection==null){	
+                synchronized(DB_Connection.class){
+                    dbConnection=new DB_Connection();
+                }
+            }
+                
+            return dbConnection;
 	}
 	public Connection getConnection()throws ClassNotFoundException,SQLException{
-		return conn;
+		return connection;
 	}
 }

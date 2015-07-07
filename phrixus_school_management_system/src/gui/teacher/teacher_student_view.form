@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JInternalFrameFormInfo">
+<Form version="1.5" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JInternalFrameFormInfo">
   <SyntheticProperties>
     <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
   </SyntheticProperties>
@@ -161,6 +161,9 @@
                     </Property>
                     <Property name="text" type="java.lang.String" value="Search"/>
                   </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="studentDetails_Search_BtnActionPerformed"/>
+                  </Events>
                 </Component>
                 <Container class="javax.swing.JPanel" name="search_tools_panel">
 
@@ -195,9 +198,6 @@
                   <SubComponents>
                     <Component class="javax.swing.JRadioButton" name="ByName_RadioButton">
                       <Properties>
-                        <Property name="model" type="javax.swing.ButtonModel" editor="org.netbeans.modules.form.ComponentChooserEditor">
-                          <ComponentRef name="default"/>
-                        </Property>
                         <Property name="text" type="java.lang.String" value="By Name"/>
                       </Properties>
                       <Events>
@@ -206,17 +206,11 @@
                     </Component>
                     <Component class="javax.swing.JRadioButton" name="ByIndexNumber_RadioButton">
                       <Properties>
-                        <Property name="model" type="javax.swing.ButtonModel" editor="org.netbeans.modules.form.ComponentChooserEditor">
-                          <ComponentRef name="default"/>
-                        </Property>
                         <Property name="text" type="java.lang.String" value="By Index Number"/>
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JRadioButton" name="ByOccupation_RadioButton">
                       <Properties>
-                        <Property name="model" type="javax.swing.ButtonModel" editor="org.netbeans.modules.form.ComponentChooserEditor">
-                          <ComponentRef name="default"/>
-                        </Property>
                         <Property name="text" type="java.lang.String" value="By Parent&apos;s Occupation"/>
                       </Properties>
                     </Component>

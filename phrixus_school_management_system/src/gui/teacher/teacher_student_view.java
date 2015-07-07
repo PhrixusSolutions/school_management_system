@@ -5,6 +5,13 @@
  */
 package gui.teacher;
 
+import Controller.StudentController;
+import Model.Student;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /**
  *
  * @author Lahiru Sandeepa
@@ -70,6 +77,11 @@ public class teacher_student_view extends javax.swing.JInternalFrame {
 
         studentDetails_Search_Btn.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         studentDetails_Search_Btn.setText("Search");
+        studentDetails_Search_Btn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                studentDetails_Search_BtnActionPerformed(evt);
+            }
+        });
 
         ByName_RadioButton.setText("By Name");
         ByName_RadioButton.addActionListener(new java.awt.event.ActionListener() {
@@ -396,6 +408,17 @@ public class teacher_student_view extends javax.swing.JInternalFrame {
     private void ByName_RadioButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ByName_RadioButtonActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_ByName_RadioButtonActionPerformed
+
+    private void studentDetails_Search_BtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_studentDetails_Search_BtnActionPerformed
+        try {
+            ArrayList<Student> studentList=StudentController.getStudentList("");
+                        // TODO add your handling code here:
+        } catch (ClassNotFoundException ex) {
+            Logger.getLogger(teacher_student_view.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (SQLException ex) {
+            Logger.getLogger(teacher_student_view.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_studentDetails_Search_BtnActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
