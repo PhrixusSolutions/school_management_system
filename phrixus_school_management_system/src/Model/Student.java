@@ -17,6 +17,7 @@ import java.util.logging.Logger;
 public class Student {
     private int studentId;
     private String fullName;
+    private String nameWithInitials;
     private String permenantAddress;  
     private String residenceAddress;
     private int telephoneNo;

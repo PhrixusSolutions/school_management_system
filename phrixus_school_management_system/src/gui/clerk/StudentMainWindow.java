@@ -8,7 +8,6 @@ package gui.clerk;
 //import gui.student.S1;
 import Controller.StudentController;
 import Model.Student;
-import gui.student.main_page;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.logging.Level;
